@@ -104,6 +104,7 @@
         border-radius: 2px;
         margin: 5px 5px 0 0;
         padding: 10px;
+        cursor: default;
 
         &:hover {
           background-color: lightgray;

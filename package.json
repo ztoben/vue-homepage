@@ -2,7 +2,7 @@
   "name": "vue-homepage",
   "version": "0.1.0",
   "scripts": {
-    "start": "NODE_ENV=DEV vue-cli-service serve",
+    "serve": "NODE_ENV=DEV vue-cli-service serve",
     "build": "vue-cli-service build",
     "deploy": "npm run build && gh-pages -d dist"
   },

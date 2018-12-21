@@ -12,16 +12,19 @@
           <p>Pioneer, Johnston, Iowa</p>
 
           <p><b>Product Engineer II (January 2017 - October 2017)</b></p>
-          <p>John Deere, Urbandale, Iowa</p>
+          <p>John Deere ISG, Urbandale, Iowa</p>
 
           <p><b>Contract Software Developer (July 2016 - March 2017)</b></p>
           <p>Heartland AEA, Johnston, Iowa</p>
 
           <p><b>IT Analyst III (November 2015 - December 2016)</b></p>
-          <p>John Deere, Urbandale, Iowa</p>
+          <p>John Deere ISG, Urbandale, Iowa</p>
 
           <p><b>Computer Software Engineer (July 2014 - October 2015)</b></p>
           <p>Heartland AEA, Johnston, Iowa</p>
+
+          <p><b>Part Time Student - Software Development (February 2012 - June 2014)</b></p>
+          <p>John Deere PEC, Waterloo, Iowa</p>
         </div>
         <div>
           <div>
