@@ -3,7 +3,7 @@ module.exports = {
     port: 9999,
     open: true
   },
-  baseUrl: '/',
+  baseUrl: '/vue-homepage/',
   chainWebpack: config => {
     config.module
       .rule('images')
