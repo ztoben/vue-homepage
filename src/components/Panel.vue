@@ -22,9 +22,14 @@
     </span>
     <div class="about">
       <p>
-        I currently live in the Des Moines, Iowa area.
+        I currently live in the Des Moines area and work at the local start up
+        <a href="https://gaincompliance.com/">Gain Compliance</a>. I've previously worked with Corteva
+        and John Deere.
+      </p>
+      <br/>
+      <p>
         I'm always looking for a challenge or something new.
-        I enjoy spending time with my family, and working on open source projects in my free time.
+        In my free time I enjoy spending time with my family, and working on open source projects.
       </p>
       <br/>
       <b>My current interests in software development are:</b>
@@ -40,16 +45,17 @@
       return {
         tags: [
           'JavaScript',
-          'React',
-          'Vue',
-          'AWS',
+          'React.js',
+          'Vue.js',
           'Google Cloud',
+          'AWS',
           'Node.js',
           'C#',
-          '.Net'
+          '.Net',
+          'Python'
         ]
       };
-    },
+    }
   }
 </script>
 
@@ -57,13 +63,15 @@
   .panel {
     display: flex;
     flex-direction: column;
-    align-content: flex-start;
+    justify-content: center;
     background-color: #A2D7FF;
     padding: 15px;
     width: 470px;
     height: 100vh;
 
     .contact {
+      margin-top: 10px;
+
       > * {
         margin: 10px;
         color: black;
@@ -71,13 +79,17 @@
         &:visited {
           color: black;
         }
+
+        &:hover {
+          color: #575757;
+        }
       }
     }
 
     img {
       border: 5px solid white;
       border-radius: 50%;
-      margin: 60px auto 40px;
+      margin: 0 auto 40px;
       width: 300px;
     }
 
@@ -92,6 +104,22 @@
         border-radius: 2px;
         margin: 5px 5px 0 0;
         padding: 10px;
+
+        &:hover {
+          background-color: lightgray;
+        }
+      }
+
+      a {
+        color: black;
+
+        &:visited {
+          color: black;
+        }
+
+        &:hover {
+          color: #575757;
+        }
       }
     }
 
