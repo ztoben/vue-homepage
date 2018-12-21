@@ -1,9 +1,9 @@
 <template>
   <div class="info">
     <div>
-      <h1>Resume</h1>
+      <h1 class="header">Resume</h1>
       <div class="resume">
-        <div>
+        <div class="work-experience">
           <h2>Work Experience</h2>
           <p><b>Software Engineer (April 2018 - Present)</b></p>
           <p>Gain Complaince, Des Moines, Iowa</p>
@@ -38,9 +38,8 @@
         </div>
       </div>
     </div>
-    <hr/>
     <div class="projects">
-      <h1>Projects</h1>
+      <h1 class="header">Projects</h1>
       <div class="projects-container">
         <div class="project" v-for="project in projects">
           <h2><a :href="project.link">{{project.name}}</a></h2>
@@ -106,6 +105,25 @@
     background-color: white;
     overflow: auto;
     padding: 50px;
+    position: relative;
+
+    .work-experience {
+      p:nth-child(odd) {
+        padding: 0;
+        margin: 0;
+      }
+
+      p:nth-child(even) {
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+    }
+
+    .header {
+      background-color: lightgray;
+      padding: 15px;
+      text-align: center;
+    }
 
     .resume {
       display: flex;
