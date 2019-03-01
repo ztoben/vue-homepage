@@ -1,5 +1,7 @@
 # vue-homepage
 
-My homepage, written in Vue.js. Bootstrapped with the vue cli.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/02130215-d448-4fc9-8891-951ae3998614/deploy-status)](https://app.netlify.com/sites/vue-homepage/deploys)
 
-*Check out the live version [here](https://ztoben.github.io/vue-homepage/).*
+_My homepage, written in Vue.js. Bootstrapped with the vue cli._
+
+Check out the live version [here](https://toben.dev/).
