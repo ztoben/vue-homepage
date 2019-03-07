@@ -27,13 +27,13 @@
           <p>John Deere PEC, Waterloo, Iowa</p>
         </div>
         <div>
-          <div>
+          <div class="education">
             <h2>Education</h2>
             <p><b>University of Northern Iowa (2014)</b></p>
             <p>Bachelor of Arts (BA), Computer Science</p>
           </div>
           <br/>
-          <div>
+          <div class="certifications">
             <h2>Certifications</h2>
             <p><b>Certified Scrum Master</b></p>
             <p>Scrum Alliance (April 2017 - Present)</p>
@@ -105,25 +105,14 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    background-color: white;
+    background-color: lightsteelblue;
     overflow: auto;
     padding: 50px;
     position: relative;
 
-    .work-experience {
-      p:nth-child(odd) {
-        padding: 0;
-        margin: 0;
-      }
-
-      p:nth-child(even) {
-        margin-bottom: 0;
-        padding-bottom: 0;
-      }
-    }
-
     .header {
-      background-color: lightgray;
+      background-color: cornflowerblue;
+      color: black;
       padding: 15px;
       text-align: center;
     }
@@ -134,6 +123,36 @@
       > div {
         flex: 1;
       }
+
+      .certifications {
+        p {
+          margin-left: 15px;
+        }
+      }
+
+      .education {
+        p {
+          margin-left: 15px;
+        }
+      }
+
+      .work-experience {
+        p:nth-child(odd) {
+          padding: 0;
+          margin-top: 0;
+        }
+
+        p:nth-child(even) {
+          margin-bottom: 0;
+          padding-bottom: 0;
+        }
+
+        p {
+          margin-left: 15px;
+        }
+      }
+
+
     }
 
     .projects {
@@ -142,7 +161,8 @@
         flex-wrap: wrap;
 
         .project {
-          background-color: lightgray;
+          background-color: darkgray;
+          color: black;
           padding: 15px 25px;
           border-radius: 20px;
           margin: 0 15px 15px 0;
@@ -153,7 +173,7 @@
           position: relative;
 
           &:hover {
-            background-color: darkgray;
+            background-color: cornflowerblue;
           }
 
           .stars {
@@ -167,10 +187,6 @@
 
             &:visited {
               color: black;
-            }
-
-            &:hover {
-              color: #575757;
             }
           }
         }
