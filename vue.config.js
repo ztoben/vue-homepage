@@ -3,7 +3,7 @@ module.exports = {
     port: 9999,
     open: true
   },
-  baseUrl: '/',
+  publicPath: '/',
   chainWebpack: config => {
     config.module
       .rule('images')

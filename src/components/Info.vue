@@ -67,13 +67,13 @@
             name: 'assets-webpack-plugin',
             description: 'Webpack plugin that emits a json file with assets paths',
             link: 'https://github.com/ztoben/assets-webpack-plugin',
-            stars: 824
+            stars: 847
           },
           {
             name: 'plex-viewer',
             description: 'Plex viewer with keyboard controls built with electron',
             link: 'https://github.com/ztoben/plex-viewer',
-            stars: 8
+            stars: 6
           },
           {
             name: 'crawl',
@@ -93,6 +93,24 @@
             link: 'https://github.com/ztoben/react-dex',
             stars: 1
           },
+          {
+            name: 'reddit-nfl-stats',
+            description: 'Displays nfl subreddit stats',
+            link: 'https://github.com/ztoben/reddit-nfl-stats',
+            stars: 0
+          },
+          {
+            name: 'neon-maze',
+            description: 'Randomly generated mazes, rendered in Vue.js',
+            link: 'https://github.com/ztoben/neon-maze',
+            stars: 1
+          },
+          {
+            name: 'drawing-board',
+            description: 'An IOS/Android drawing app created with Expo',
+            link: 'https://github.com/ztoben/drawing-board',
+            stars: 0
+          },
         ]
       };
     },
@@ -105,13 +123,13 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    background-color: lightsteelblue;
+    background-color: white;
     overflow: auto;
     padding: 50px;
     position: relative;
 
     .header {
-      background-color: cornflowerblue;
+      background-color: darkgray;
       color: black;
       padding: 15px;
       text-align: center;
@@ -161,7 +179,7 @@
         flex-wrap: wrap;
 
         .project {
-          background-color: darkgray;
+          background-color: lightgray;
           color: black;
           padding: 15px 25px;
           border-radius: 20px;
@@ -173,7 +191,7 @@
           position: relative;
 
           &:hover {
-            background-color: cornflowerblue;
+            background-color: darkgray;
           }
 
           .stars {
