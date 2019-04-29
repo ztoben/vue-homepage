@@ -1,6 +1,10 @@
 {
   "name": "vue-homepage",
   "version": "0.1.0",
+  "engineStrict": true,
+  "engines": {
+      "node": ">=11 <12"
+   },
   "scripts": {
     "start": "NODE_ENV=DEV vue-cli-service serve",
     "build": "vue-cli-service build"
@@ -13,7 +17,7 @@
     "vue": "2.6.10"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "3.6.0",
+    "@vue/cli-plugin-babel": "3.7.0",
     "@vue/cli-service": "3.7.0",
     "gh-pages": "2.0.1",
     "node-sass": "^4.9.0",
