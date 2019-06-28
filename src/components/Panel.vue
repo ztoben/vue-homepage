@@ -63,7 +63,7 @@
   .panel {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     background-color: #A2D7FF;
     padding: 15px;
     width: 470px;
@@ -89,7 +89,7 @@
     img {
       border: 5px solid white;
       border-radius: 50%;
-      margin: 0 auto 40px;
+      margin: 40px auto;
       width: 300px;
     }
 

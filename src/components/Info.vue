@@ -6,16 +6,16 @@
         <div class="work-experience">
           <h2>Work Experience</h2>
           <p><b>Software Engineer (April 2018 - Present)</b></p>
-          <p>Gain Complaince, Des Moines, Iowa</p>
+          <p>Gain Compliance, Des Moines, Iowa</p>
+
+          <p><b>Contract Software Developer (July 2016 - Present)</b></p>
+          <p>Heartland AEA, Johnston, Iowa</p>
 
           <p><b>Contract Software Developer (September 2017 - March 2018)</b></p>
           <p>Pioneer, Johnston, Iowa</p>
 
           <p><b>Product Engineer II (January 2017 - October 2017)</b></p>
           <p>John Deere ISG, Urbandale, Iowa</p>
-
-          <p><b>Contract Software Developer (July 2016 - March 2017)</b></p>
-          <p>Heartland AEA, Johnston, Iowa</p>
 
           <p><b>IT Analyst III (November 2015 - December 2016)</b></p>
           <p>John Deere ISG, Urbandale, Iowa</p>
@@ -67,13 +67,25 @@
             name: 'assets-webpack-plugin',
             description: 'Webpack plugin that emits a json file with assets paths',
             link: 'https://github.com/ztoben/assets-webpack-plugin',
-            stars: 847
+            stars: 870
           },
           {
             name: 'plex-viewer',
             description: 'Plex viewer with keyboard controls built with electron',
             link: 'https://github.com/ztoben/plex-viewer',
-            stars: 6
+            stars: 9
+          },
+          {
+            name: 'svelte-snake',
+            description: 'A snake game made with Svelte',
+            link: 'https://github.com/ztoben/svelte-snake',
+            stars: 4
+          },
+          {
+            name: 'base-64-extension',
+            description: 'A web extension for base64 encoding and decoding',
+            link: 'https://github.com/ztoben/base64extension',
+            stars: 1
           },
           {
             name: 'crawl',
@@ -81,6 +93,19 @@
             link: 'https://github.com/ztoben/crawl',
             stars: 0
           },
+          {
+            name: 'neon-maze',
+            description: 'Randomly generated mazes, rendered in Vue.js',
+            link: 'https://github.com/ztoben/neon-maze',
+            stars: 1
+          },
+          {
+            name: 'drawing-board',
+            description: 'An IOS/Android drawing app created with Expo',
+            link: 'https://github.com/ztoben/drawing-board',
+            stars: 1
+          },
+
           {
             name: 'react-pomodoro',
             description: 'A pomodoro timer written in React.js',
@@ -98,19 +123,7 @@
             description: 'Displays nfl subreddit stats',
             link: 'https://github.com/ztoben/reddit-nfl-stats',
             stars: 0
-          },
-          {
-            name: 'neon-maze',
-            description: 'Randomly generated mazes, rendered in Vue.js',
-            link: 'https://github.com/ztoben/neon-maze',
-            stars: 1
-          },
-          {
-            name: 'drawing-board',
-            description: 'An IOS/Android drawing app created with Expo',
-            link: 'https://github.com/ztoben/drawing-board',
-            stars: 0
-          },
+          }
         ]
       };
     },
@@ -177,13 +190,14 @@
       .projects-container {
         display: inline-flex;
         flex-wrap: wrap;
+        justify-content: space-evenly;
 
         .project {
           background-color: lightgray;
           color: black;
           padding: 15px 25px;
           border-radius: 20px;
-          margin: 0 15px 15px 0;
+          margin: 5px;
           display: flex;
           flex: 1;
           flex-direction: column;
