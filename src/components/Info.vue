@@ -1,10 +1,9 @@
 <template>
   <div class="info">
     <div>
-      <h1 class="header">Resume</h1>
-      <div class="resume">
-        <div class="work-experience">
-          <h2>Work Experience</h2>
+      <h1 class="header">Work Experience</h1>
+      <div class="info-container">
+        <div>
           <p><b>Software Engineer (April 2018 - Present)</b></p>
           <p>Gain Compliance, Des Moines, Iowa</p>
 
@@ -16,7 +15,8 @@
 
           <p><b>Product Engineer II (January 2017 - October 2017)</b></p>
           <p>John Deere ISG, Urbandale, Iowa</p>
-
+        </div>
+        <div>
           <p><b>IT Analyst III (November 2015 - December 2016)</b></p>
           <p>John Deere ISG, Urbandale, Iowa</p>
 
@@ -26,20 +26,14 @@
           <p><b>Part Time Student - Software Development (February 2012 - June 2014)</b></p>
           <p>John Deere PEC, Waterloo, Iowa</p>
         </div>
-        <div>
-          <div class="education">
-            <h2>Education</h2>
-            <p><b>University of Northern Iowa (2014)</b></p>
-            <p>Bachelor of Arts (BA), Computer Science</p>
-          </div>
-          <br/>
-          <div class="certifications">
-            <h2>Certifications</h2>
-            <p><b>Certified Scrum Master</b></p>
-            <p>Scrum Alliance (April 2017 - Present)</p>
-          </div>
-        </div>
       </div>
+      <h1 class="header">Education</h1>
+      <p><b>University of Northern Iowa (2014)</b></p>
+      <p>Bachelor of Arts (BA), Computer Science</p>
+
+      <h1 class="header">Certifications</h1>
+      <p><b>Certified Scrum Master</b></p>
+      <p>Scrum Alliance (April 2017 - Present)</p>
     </div>
     <div class="projects">
       <h1 class="header">Projects</h1>
@@ -136,54 +130,38 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    background-color: white;
     overflow: auto;
     padding: 50px;
     position: relative;
+    background: white linear-gradient(45deg,
+      rgb(22, 244, 197) 0%,
+      rgb(22, 244, 197) 12%,
+      rgb(24, 219, 187) 12%,
+      rgb(24, 219, 187) 51%,
+      rgb(26, 193, 176) 51%,
+      rgb(26, 193, 176) 52%,
+      rgb(28, 168, 166) 52%,
+      rgb(28, 168, 166) 66%,
+      rgb(29, 143, 155) 66%,
+      rgb(29, 143, 155) 73%,
+      rgb(31, 117, 145) 73%,
+      rgb(31, 117, 145) 80%,
+      rgb(33, 92, 134) 80%,
+      rgb(33, 92, 134) 100%);
 
     .header {
-      background-color: darkgray;
+      border: 5px solid black;
       color: black;
       padding: 15px;
       text-align: center;
     }
 
-    .resume {
+    .info-container {
       display: flex;
 
       > div {
         flex: 1;
       }
-
-      .certifications {
-        p {
-          margin-left: 15px;
-        }
-      }
-
-      .education {
-        p {
-          margin-left: 15px;
-        }
-      }
-
-      .work-experience {
-        p:nth-child(odd) {
-          padding: 0;
-          margin-top: 0;
-        }
-
-        p:nth-child(even) {
-          margin-bottom: 0;
-          padding-bottom: 0;
-        }
-
-        p {
-          margin-left: 15px;
-        }
-      }
-
-
     }
 
     .projects {
@@ -193,7 +171,6 @@
         justify-content: space-evenly;
 
         .project {
-          background-color: lightgray;
           color: black;
           padding: 15px 25px;
           border-radius: 20px;
@@ -203,9 +180,10 @@
           flex-direction: column;
           min-width: 300px;
           position: relative;
+          border: 5px solid black;
 
           &:hover {
-            background-color: darkgray;
+            background-color: rgba(0, 0, 0, 0.2);
           }
 
           .stars {
