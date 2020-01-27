@@ -1,12 +1,13 @@
 <template>
-  <div class="panel">
-    <img
-      src='../assets/about.jpg'
-      alt='About'
-    />
-    <h1>Zach Toben</h1>
-    <h3>Full Stack Developer</h3>
-    <span class="contact">
+  <div class="container">
+    <div class="panel">
+      <img
+        src='../assets/about.jpg'
+        alt='About'
+      />
+      <h1>Zach Toben</h1>
+      <h3>Full Stack Developer</h3>
+      <span class="contact">
       <a href="https://www.github.com/ztoben">
         <font-awesome-icon :icon="['fab', 'github']"/>
       </a>
@@ -20,20 +21,21 @@
         <font-awesome-icon icon="envelope"/>
       </a>
     </span>
-    <div class="about">
-      <p>
-        I currently live in the Des Moines area and work at the local start up
-        <a href="https://gaincompliance.com/">Gain Compliance</a>. I've previously worked with Corteva
-        and John Deere.
-      </p>
-      <br/>
-      <p>
-        I'm always looking for a challenge or something new.
-        In my free time I enjoy spending time with my family, and working on open source projects.
-      </p>
-      <br/>
-      <b>My current interests in software development are:</b>
-      <div class="tag" v-for="tag in tags">{{ tag }}</div>
+      <div class="about">
+        <p>
+          I currently live in the Des Moines area and work at the local start up
+          <a href="https://gaincompliance.com/">Gain Compliance</a>. I've previously worked with Corteva
+          and John Deere.
+        </p>
+        <br/>
+        <p>
+          I'm always looking for a challenge or something new.
+          In my free time I enjoy spending time with my family, and working on open source projects.
+        </p>
+        <br/>
+        <b>My current interests in software development are:</b>
+        <div class="tag" v-for="tag in tags">{{ tag }}</div>
+      </div>
     </div>
   </div>
 </template>
@@ -60,14 +62,21 @@
 </script>
 
 <style scoped lang="scss">
+  .container {
+    display: flex;
+    background-color: #A2D7FF;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+  }
+
   .panel {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: #A2D7FF;
     padding: 15px;
-    width: 470px;
-    height: 100vh;
+    max-width: 475px;
+
 
     .contact {
       margin-top: 10px;

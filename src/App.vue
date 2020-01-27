@@ -1,19 +1,16 @@
 <template>
   <div id="app">
     <Panel/>
-    <Info/>
   </div>
 </template>
 
 <script>
   import Panel from './components/Panel.vue'
-  import Info from './components/Info.vue'
 
   export default {
     name: 'app',
     components: {
-      Panel,
-      Info
+      Panel
     }
   }
 </script>
