@@ -73,7 +73,6 @@
 
   body {
     margin: 0;
-    overflow: hidden;
     background-color: $original-background-color;
     color: $dark;
     transition: background-color .2s ease, color .2s ease;

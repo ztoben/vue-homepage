@@ -34,6 +34,7 @@
         </p>
         <br/>
         <b>My current interests in software development are:</b>
+        <br/>
         <div class="tag" v-for="tag in tags" v-bind:key="tag">{{ tag }}</div>
       </div>
     </div>
