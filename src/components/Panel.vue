@@ -34,7 +34,7 @@
         </p>
         <br/>
         <b>My current interests in software development are:</b>
-        <div class="tag" v-for="tag in tags">{{ tag }}</div>
+        <div class="tag" v-for="tag in tags" v-bind:key="tag">{{ tag }}</div>
       </div>
     </div>
   </div>
@@ -47,13 +47,15 @@
       return {
         tags: [
           'JavaScript',
-          'React.js',
-          'Vue.js',
-          'Google Cloud',
-          'AWS',
+          'Typescript',
           'Node.js',
+          'React',
+          'Vue',
+          'Svelte',
+          'AWS',
+          'Google Cloud',
           'C#',
-          '.Net',
+          '.Net Core',
           'Python'
         ]
       };
@@ -64,7 +66,6 @@
 <style scoped lang="scss">
   .container {
     display: flex;
-    background-color: #A2D7FF;
     width: 100vw;
     height: 100vh;
     justify-content: center;
