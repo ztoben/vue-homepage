@@ -2,5 +2,5 @@
   "extends": [
     "config:base"
   ],
-  "ignoreDeps": ["vue", "@vue/cli-service", ""]
+  "ignoreDeps": ["vue", "@vue/cli-service", "sass-loader"]
 }
