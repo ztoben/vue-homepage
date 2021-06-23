@@ -2,5 +2,15 @@
   "extends": [
     "config:base"
   ],
-  "ignoreDeps": ["vue", "@vue/cli-service", "sass-loader"]
+  "ignoreDeps": [
+    "vue",
+    "@vue/cli-service",
+    "@vue/compiler-sfc",
+    "vue-template-compiler",
+    "vue-cli-plugin-vuetify",
+    "@vue/cli-service",
+    "@vue/cli-plugin-babel",
+    "@fortawesome/vue-fontawesome",
+    "sass-loader"
+  ]
 }
